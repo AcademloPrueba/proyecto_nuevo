@@ -1,0 +1,105 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;600;700;800;900&family=Inter:wght@400;700;900&display=swap');
+
+ body {
+    font-family: 'Inknut Antiqua', serif;
+ }
+
+.card {
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    width: 350px;
+}
+.card_title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+.card_container {
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.card_container:hover {
+    box-shadow: 0px 0px 15px 2.5px gray;
+}
+.card_list {
+    background-color: #EFEFEF;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid gray;
+    padding-left: 20px;
+}
+.card_list a {
+    text-decoration: none;
+    color: #3272DB;
+    padding: 7.5px 10px;
+    border-radius: 5px;
+}
+.card_list>a>img {
+    width: 50%;
+}
+.card_list a img {
+    width: 50%;
+}
+.card_list a:focus {
+    background-color: #3272DB;
+    color: white;
+}
+.card_list_item {
+    color: inherit;
+    transition: filter,transform 500ms ease;
+}
+.card_list_item:hover {
+    filter: brightness(1.25);
+    transform: scale(1.1);
+    transition: filter,transform 500ms ease;
+}
+.card_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.card_footer_title {
+    margin: 5px;
+    /* font-size: ; */
+}
+.card_text {
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+}
+.card_button {
+    border: none;
+    background-color: #3272DB;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: filter,transform 500ms ease;
+    font-family: 'Inknut Antiqua', serif;
+}
+.card_button:hover {
+    filter: brightness(1.25);
+    transform: scale(1.1);
+    transition: filter,transform 500ms ease;
+}
+.card_button::after {
+    content: "";
+    background: url("/img/arrow_icon.png")no-repeat;
+    background-size: 100%;
+    width: 15px;
+    aspect-ratio: 1;
+    display: block;
+    margin-left: 10px;
+}
